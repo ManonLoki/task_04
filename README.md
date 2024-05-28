@@ -3,9 +3,8 @@
 ## 三个 Crate 的 Examples
 
 - 学习 tower
-- 学习 hyper
-- 学习 qqlx
-- 学习 tokio-utils 和 futures-utils
+- 学习 hyper 改为学习Tokio
+- 学习 sqlx
 
 ## 作业
 
