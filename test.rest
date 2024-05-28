@@ -1,0 +1,2 @@
+### Test Tower-Axum MyLogService
+GET http://localhost:3000
