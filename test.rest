@@ -1,2 +1,10 @@
 ### Test Tower-Axum MyLogService
 GET http://localhost:3000
+
+### Test Axum-SSE SendMessage
+POST http://localhost:3000
+Content-Type: application/json
+
+{
+    "message": "你好 Rust"
+}

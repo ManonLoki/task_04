@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>axum-sse</title>
+  </head>
+  <body>
+    <h1>axum-sse</h1>
+    <p>Server-sent events example using Axum.</p>
+    <div id="messages"></div>
+    <script>
+      const messages = document.getElementById("messages");
+      const eventSource = new EventSource("http://localhost:3000/sse");
+
+      eventSource.onmessage = (event) => {
+        const message = document.createElement("div");
+        message.textContent = event.data;
+        messages.appendChild(message);
+      };
+    </script>
+  </body>
