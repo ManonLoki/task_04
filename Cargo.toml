@@ -8,9 +8,14 @@ license = "MIT"
 
 [dependencies]
 anyhow = "1.0.86"
-axum = { version = "0.7.5", features = ["http2", "query", "tracing","tokio"] }
+axum = { version = "0.7.5", features = ["http2", "query", "tracing","tokio","original-uri"] }
+dashmap = "5.5.3"
+futures-util = { version = "0.3.30", features = ["sink"] }
+nanoid = "0.4.0"
 pin-project = "1.1.5"
 serde = { version = "1.0.203", features = ["derive"] }
+sqlx = { version = "0.7.4", features = ["runtime-tokio", "tls-rustls", "postgres"] }
+thiserror = "1.0.61"
 tokio = { version = "1.37.0", features = ["rt", "rt-multi-thread", "macros", "net","time","sync"] }
 tokio-stream = { version = "0.1.15", features = ["sync"] }
 tokio-util = { version = "0.7.11", features = ["futures-util"] }

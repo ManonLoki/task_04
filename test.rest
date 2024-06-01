@@ -8,3 +8,19 @@ Content-Type: application/json
 {
     "message": "你好 Rust"
 }
+
+
+### TEST CREATE SHORTENER
+POST http://localhost:3000
+Content-Type: application/json
+
+{
+    "url": "https://www.google.com"
+}
+
+### TEST GET SHORTENER FOUNDED
+GET http://localhost:3000/43mmIX
+
+
+### TEST GET SHORTENER NOT FOUND
+GET http://localhost:3000/UNKNOW
