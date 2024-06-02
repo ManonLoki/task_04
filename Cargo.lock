@@ -1612,6 +1612,7 @@ dependencies = [
  "anyhow",
  "axum",
  "dashmap",
+ "dotenvy",
  "futures-util",
  "nanoid",
  "pin-project",
